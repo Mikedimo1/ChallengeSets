@@ -7,22 +7,28 @@ namespace ChallengeSets
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            return char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
+            //CountOfElementsIsEven.
+
             throw new NotImplementedException();
+
         }
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
+            int result = number % 2;
+            return result == 0;
         }
+
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
+            
+            return num % 2 == 1;
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
