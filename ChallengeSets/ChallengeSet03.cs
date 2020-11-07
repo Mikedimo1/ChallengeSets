@@ -71,32 +71,12 @@ namespace ChallengeSets
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            // throw new NotImplementedException();
-            List<string> upperCaseList = words.ToList<string>;
-
-            //second attempt looking to remove the old items from the list and append the new manipulated items into the list
-            foreach (var item in words)
+            for (int i = 0; i < words.Length; i++)
             {
-                string upperCase = item;
-                var finalResult = upperCase.ToUpper();
-                words.ToArray();
-                words.Append(finalResult);
-
-                //}
-                ////First attempt bu replacing the list with new values or upper case items
-                //for (int i = 0; i < words.Length; i++)
-                //{
-                //    string upperCaseWord = words[i].ToUpper();
-                //    words[i].Replace(words[i], upperCaseWord);
-                //}
-
-
-            }
-            words.ToList();
-            //return words;
-            Console.WriteLine(words);
-            Console.WriteLine("TEST");
-        
+                words[i] = words[i].ToUpper();
+            }                    
+           
         }
     }
 }
+
